@@ -9,10 +9,11 @@ const [count, setCount] = useState(0);
     },)
     
   return (
-    <>
+    <div className='py-12'>
+     <h1 className='text-5xl text-black font-bold pb-6 text-center'>Use Effect </h1>
     <p className='text-3xl text-red-500 text-center'>{count}</p>
         <div></div>
-    </>
+    </div>
   )
 }
 
