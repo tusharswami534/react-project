@@ -5,14 +5,20 @@ import ShowCard from '../components/home/ShowCard'
 import { TestEmailJs } from '../components/home/TestEmailJs'
 import HeaderLogo from '../components/common/HeaderLogo'
 import YearFunction from '../components/common/YearFunction'
+import TyperWrite from '../components/home/TyperWrite'
+import Navbar from '../components/common/Navbar'
+import CounterTest from '../components/home/CounterTest'
 
 const Home = () => {
   return (
     <div>
-        <HeaderLogo/>
+      <Navbar/>
+      <CounterTest/>
         <UseEffect/>
+        <TyperWrite/>
         <UseState/>
         <ShowCard/>
+        <HeaderLogo/>
         <TestEmailJs/>
         <YearFunction/>
     </div>

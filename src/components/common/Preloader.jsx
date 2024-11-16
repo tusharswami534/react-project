@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import PreloaderGif from '../../assets/gif/preloader.gif'
 
 const Preloader = () => {
-    const [loading, setLoading] = useState(false)
+  const [preloader , setPreloader] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+        setPreloader(false)
+    }, 1000)
+},)
 
-    useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000)
-        })
   return (
     <div>
-        <div className={`preloader ${loading ? 'active' : ''}`}></div>
+      {preloader ? (
+        <div className='min-h-screen fixed z-[100] h-full w-full top-0 right-0'>
+          <img className='w-full h-full' src={PreloaderGif} alt="preloader" />
+        </div>
+      ) : null}
+       
     </div>
   )
 }
