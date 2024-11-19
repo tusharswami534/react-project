@@ -5,9 +5,6 @@ const ShowCard = () => {
     const toggleShowMore = () => setShowMore((ShowMore) => !ShowMore);
   return (
     <div className='flex flex-col py-12 '>
-        {/* {Array.from(3).map((_, i) => (
-                <div key={i} className='w-20 h-20 bg-black mx-3 my-5'></div>
-            ))} */}
                 <h1 className='text-5xl text-black font-bold text-center'>Shwo More , Less card </h1>
           <div className='flex flex-wrap flex-col items-center justify-center'>
             <div className='flex flex-wrap items-center justify-center'>

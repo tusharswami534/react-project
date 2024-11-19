@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { DashBoard_Icon, SIDE_BAR_DATA, TAB_Link } from '../common/Helper';
 import Zareh from '../../assets/images/zareh-geertjes.png';
 
-// Import content components
 import EventContent from './EventContent';
 import ProgrammesContent from './ProgrammesContent';
 import DashboardContent from './DashboardContent';
@@ -10,11 +9,10 @@ import OndemandCntent from './OndemandCntent'
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('tab-one'); // Active tab state
+  const [activeTab, setActiveTab] = useState('tab-one'); 
   
   const toggleSidebar = () => setOpen(!open);
 
-  // Handle tab click
   const handleClick = (tabId) => {
     setActiveTab(tabId);
   };

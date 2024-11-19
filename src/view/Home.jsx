@@ -8,6 +8,7 @@ import YearFunction from '../components/common/YearFunction'
 import TyperWrite from '../components/home/TyperWrite'
 import Navbar from '../components/common/Navbar'
 import CounterTest from '../components/home/CounterTest'
+import FormValidation from '../components/home/FormValidation'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <UseState/>
         <ShowCard/>
         <HeaderLogo/>
+        <FormValidation/>
         <TestEmailJs/>
         <YearFunction/>
     </div>
