@@ -6,7 +6,7 @@ import HeaderLogo from '../components/common/HeaderLogo'
 import YearFunction from '../components/common/YearFunction'
 import Navbar from '../components/common/Navbar'
 import MySwiper from '../components/second/MySwiper'
-import CustomTabs from '../components/second/CustomTabs'
+import FormValidation from '../components/home/FormValidation'
 
 
 const Second = () => {
@@ -17,8 +17,8 @@ const Second = () => {
         <AnimateCss/>
         <TiltJs/>
         <LottieTesting/>
-        <CustomTabs/>
         <MySwiper/>
+        <FormValidation/>
         <YearFunction/>
     </div>
   )
