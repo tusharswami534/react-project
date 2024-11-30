@@ -26,7 +26,7 @@ const FormValidation = () => {
       value.password !== '' &&
       value.confirmPassword !== '' &&
       value.select !== '' &&
-      value.checkBox // Check if the checkbox is checked
+      value.checkBox 
     ) {
       setValue(formData);
       setError(false);
