@@ -9,11 +9,13 @@ import TyperWrite from '../components/home/TyperWrite'
 import Navbar from '../components/common/Navbar'
 import CounterTest from '../components/home/CounterTest'
 import FormValidation from '../components/home/FormValidation'
+import CustomAccordion from '../components/home/CustomAccordion'
 
 const Home = () => {
   return (
     <div>
       <Navbar/>
+      <CustomAccordion/>
       <CounterTest/>
         <UseEffect/>
         <TyperWrite/>

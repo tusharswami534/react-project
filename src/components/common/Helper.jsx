@@ -58,3 +58,25 @@ export const Navbar_Data = [
         NavName : 'dashboard'
     }
 ] 
+export const ACCORDION_DATA = [
+    {
+        ButtonName : 'BTN 1 ' ,
+        Content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+    },
+    {
+        ButtonName : 'BTN 2 ' ,
+        Content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+    },
+    {
+        ButtonName : 'BTN 3 ' ,
+        Content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+    },
+    {
+        ButtonName : 'BTN 4 ' ,
+        Content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+    },
+    {
+        ButtonName : 'BTN 5 ' ,
+        Content : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+    }
+]

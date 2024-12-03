@@ -34,7 +34,7 @@ const FormValidation = () => {
       swal({
         title: "Are you sure?",
         text: "Are you sure that you want to leave this page?",
-        icon: "warning",
+        icon: "success",
         dangerMode: true,
       });
     }
