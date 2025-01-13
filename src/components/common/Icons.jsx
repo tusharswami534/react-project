@@ -13,6 +13,7 @@ export const DashBoardIcon = () => (
         </defs>
     </svg>
 )
+
 export const EventIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.75 3H18.5V0.5625C18.5 0.253125 18.2469 0 17.9375 0H16.0625C15.7531 0 15.5 0.253125 15.5 0.5625V3H9.5V0.5625C9.5 0.253125 9.24687 0 8.9375 0H7.0625C6.75313 0 6.5 0.253125 6.5 0.5625V3H4.25C3.00781 3 2 4.00781 2 5.25V21.75C2 22.9922 3.00781 24 4.25 24H20.75C21.9922 24 23 22.9922 23 21.75V5.25C23 4.00781 21.9922 3 20.75 3ZM20.4688 21.75H4.53125C4.37656 21.75 4.25 21.6234 4.25 21.4688V7.5H20.75V21.4688C20.75 21.6234 20.6234 21.75 20.4688 21.75Z" fill="white" />
@@ -25,6 +26,7 @@ export const OnDemandIcon = () => (
         <path d="M15.93 10.658L10.16 7.768V7.76C9.41 7.38 8.51 7.68 8.14 8.43C8.03 8.63 7.98 8.86 7.98 9.1V14.86C7.97 15.68 8.65 16.359 9.47 16.359C9.7 16.359 9.93 16.299 10.14 16.199L15.9 13.309C16.64 12.929 16.94 12.029 16.57 11.289C16.42 10.989 16.18 10.759 15.89 10.609L15.93 10.658Z" fill="white" />
     </svg>
 )
+
 export const ProgrammeIcon = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_7569_2098)">
@@ -37,6 +39,7 @@ export const ProgrammeIcon = () => (
         </defs>
     </svg>
 )
+
 export const DashboardIconTwo = () => (
     <svg width="184" height="63" viewBox="0 0 184 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_7570_1063)">
@@ -52,9 +55,4 @@ export const DashboardIconTwo = () => (
 </defs>
 </svg>
 
-)
-export const FavIcon = () => (
-    <svg width="55" height="57" viewBox="0 0 55 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.5281 56.3431C42.7008 56.3431 55.0006 43.9186 55.0006 28.5922C55.0006 13.2657 42.7008 0.841187 27.5281 0.841187C12.3555 0.841187 0.0556946 13.2657 0.0556946 28.5922C0.0556946 43.9186 12.3555 56.3431 27.5281 56.3431Z" fill="#FFED00"/>
-</svg>
 )

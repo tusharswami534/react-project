@@ -14,8 +14,8 @@ function App() {
         <Preloader/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='second' element={<Second/>} />
-          <Route path='dashboard' element={<Dashboard/>} />
+          <Route path='/second' element={<Second/>} />
+          <Route path='/dashboard' element={<Dashboard/>} />
         </Routes>
         <BackToTop/>
         </BrowserRouter>

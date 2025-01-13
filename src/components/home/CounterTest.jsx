@@ -1,28 +1,76 @@
-import React, { useState } from 'react';
-import CountUp from 'react-countup'; 
-import ReactVisibilitySensor from 'react-visibility-sensor';
-import CommonHeading from '../common/CommonHeading';
+import React, { useEffect, useState } from "react";
 
-const CounterTest = () => {
-    const [isVisible, setIsVisible] = useState(false); 
-       const handleVisibilityChange = (isVisible) => {
-        setIsVisible(isVisible); 
+const BusinessCounter = () => {
+    const BUSINESS_DATA = [
+        {
+            prefix: "",
+            number: 99,
+            unit: "%",
+            description: "Of all businesses see results with AI",
+        },
+    
+        {
+            number: 15,
+            prefix: "$",
+            unit: "T",
+            description: "Projected global AI market cap by 2030",
+        },
+    
+        {
+            prefix: "",
+            number: 3.5,
+            unit: "X",
+            description: "More likely to outperform competitors with AI",
+        },
+    ];
+    
+    const AnimateCount = ({ start, end }) => {
+        const [value, setValue] = useState(start);
+
+        useEffect(() => {
+            let startTimestamp = null;
+            const duration = 2000;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                setValue(Math.round(progress * (end - start) + start));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+
+            window.requestAnimationFrame(step);
+        }, [end, start]);
+
+        return <span>{value}</span>;
     };
 
     return (
-        <div className='max-w-[1140px] w-full mx-auto'>
-            <div>
-                <CommonHeading Heading='Counter Test' />
-                <div>
-                    <ReactVisibilitySensor onChange={handleVisibilityChange}>
-                        <div className='text-5xl text-black font-bold pb-6 text-center'>
-                            <CountUp start={0} end={isVisible ? 100 : 0} delay={1} />
+        <div className="text-white lg:pt-14 pt-12  xl:pb-[87px] md:py-14 py-6 relative" id="solution">
+            <div className="container mx-auto px-4 relative z-10">
+                <div className="gap-8 text-center flex max-md:flex-wrap items-center justify-center">
+                    {BUSINESS_DATA.map(({ number, prefix = "", unit = "", description }, index) => (
+                        <div
+                            key={index}
+                            className={`lg:w-[41%] w-full px-3 flex flex-col justify-center items-center max-lg:mb-6 ${index !== BUSINESS_DATA.length - 1 ? "border-gradient" : ""
+                                }`}
+                        >
+                            <div className="flex items-center justify-center lg:text-5xl text-2xl font-semibold">
+                                {prefix && <span className="lg:text-5xl lg:leading-custom-5xl text-2xl">{prefix}</span>}
+                                {index < 3 ? (
+                                    <AnimateCount start={0} end={number} />
+                                ) : (
+                                    <span>{number}</span>
+                                )}
+                                {unit && <span className="lg:text-5xl text-2xl">{unit}</span>}
+                            </div>
+                            <p className="sm:text-base text-sm text-white font-normal pt-2 md:max-w-[187px]">{description}</p>
                         </div>
-                    </ReactVisibilitySensor>
+                    ))}
                 </div>
             </div>
         </div>
     );
 };
 
-export default CounterTest;
+export default BusinessCounter;

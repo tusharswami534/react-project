@@ -4,8 +4,10 @@ import PreloaderGif from '../../assets/gif/preloader.gif'
 const Preloader = () => {
   const [preloader , setPreloader] = useState(true)
   useEffect(() => {
+    document.body.style.overflow = 'hidden'
     setTimeout(() => {
         setPreloader(false)
+         document.body.style.overflow = 'auto'
     }, 1000)
 },)
 

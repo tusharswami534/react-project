@@ -8,7 +8,7 @@ const Dashboard = () => {
         <div className='flex relative overflow-hidden'>
             <Helmet>
                 <title>
-                    DashBord
+                    DashBoard
                 </title>
             </Helmet>
             <Sidebar/>

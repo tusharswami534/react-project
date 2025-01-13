@@ -43,7 +43,7 @@ const Sidebar = () => {
         <div>
           {DashBoard_Icon.map((logo, l) => (
             <div className="pt-11" key={l}>
-              <a href={logo.logoLink}>{logo.logoIcon}</a>
+              <a href={logo.Link}>{logo.Icon}</a>
             </div>
           ))}
           {SIDE_BAR_DATA.map((data, i) => (
@@ -53,17 +53,17 @@ const Sidebar = () => {
               className={`flex gap-x-4 pt-8 items-center cursor-pointer text-white ${
                 activeTab === data.id ? 'text-yellow-500  ' : ''
               }`}
-              onClick={() => handleClick(data.id)} // Set the active tab
+              onClick={() => handleClick(data.id)}
             >
-              {data.tabIcon}
-              <p>{data.tabName}</p>
+              {data.Icon}
+              <p>{data.Name}</p>
             </div>
           ))}
         </div>
         <div>
           {TAB_Link.map((name, index) => (
             <div className="text-[#808080] pt-[17px]" key={index}>
-              <a href={name.tabLink}>{name.tabName}</a>
+              <a href={name.Link}>{name.Name}</a>
             </div>
           ))}
           <div className="pt-11 pb-10">

@@ -4,15 +4,15 @@ import TiltJs from '../components/second/TiltJs'
 import LottieTesting from '../components/second/LottieTesting'
 import HeaderLogo from '../components/common/HeaderLogo'
 import YearFunction from '../components/common/YearFunction'
-import Navbar from '../components/common/Navbar'
 import MySwiper from '../components/second/MySwiper'
 import FormValidation from '../components/home/FormValidation'
+import Header from '../components/common/Header'
 
 
 const Second = () => {
   return (
     <div>
-      <Navbar/>
+      <Header/>
       <HeaderLogo/>
         <AnimateCss/>
         <TiltJs/>
